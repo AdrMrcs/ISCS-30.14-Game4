@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1o18phgtbwqi"]
+
+[ext_resource type="PackedScene" uid="uid://duetvswiaara2" path="res://dragndrop.tscn" id="1_lq0wf"]
+[ext_resource type="PackedScene" uid="uid://bw02b3oq4iglp" path="res://test_zones.tscn" id="2_2owxu"]
+
+[node name="main" type="Node2D"]
+
+[node name="test drop zones" parent="." instance=ExtResource("2_2owxu")]
+
+[node name="dragndrop" parent="." instance=ExtResource("1_lq0wf")]

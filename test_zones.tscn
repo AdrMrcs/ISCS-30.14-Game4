@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bw02b3oq4iglp"]
+
+[ext_resource type="PackedScene" uid="uid://bgusco8v5qslq" path="res://dropzone.tscn" id="1_tnk6g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="dropzone" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(199, 112)
+
+[node name="dropzone2" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(674, 229)
+
+[node name="dropzone3" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(365, 373)
