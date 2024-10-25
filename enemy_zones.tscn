@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dp4tt4dbmkimd"]
+
+[ext_resource type="PackedScene" uid="uid://oktbikbvomqv" path="res://enemyzone.tscn" id="1_fxg4a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="dropzone" parent="." instance=ExtResource("1_fxg4a")]
+position = Vector2(966, 639)
+
+[node name="dropzone2" parent="." instance=ExtResource("1_fxg4a")]
+position = Vector2(841, 766)

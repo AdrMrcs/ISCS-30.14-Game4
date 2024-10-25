@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba3veaj5a553h"]
+
+[ext_resource type="Texture2D" uid="uid://bimibnd0tp4ja" path="res://icon.svg" id="1_f7muc"]
+[ext_resource type="PackedScene" uid="uid://dmwyboohpakgo" path="res://health_component.tscn" id="2_5cf2q"]
+[ext_resource type="PackedScene" uid="uid://brd8bynp1xu00" path="res://attack_component.tscn" id="3_w4lke"]
+
+[node name="Enemy" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_f7muc")
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_5cf2q")]
+
+[node name="AttackComponent" parent="." instance=ExtResource("3_w4lke")]

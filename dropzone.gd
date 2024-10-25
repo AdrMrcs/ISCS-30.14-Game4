@@ -1,12 +1,14 @@
 extends Marker2D
 
+@export var selected = false
+
 func _draw():
 	draw_circle(Vector2.ZERO, 20, Color.LIGHT_SALMON)
 	
 func _select():
-	for child in get_tree().get_nodes_in_group("zone"):
-		child.deselect()
 	modulate = Color.WEB_MAROON
+	selected = true
 		
 func deselect():
 	modulate = Color.WHITE
+	selected = false

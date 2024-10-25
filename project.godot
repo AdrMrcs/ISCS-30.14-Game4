@@ -15,9 +15,16 @@ run/main_scene="res://new_main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1250
+window/size/viewport_height=850
+
 [global_group]
 
 zone=""
+enemyzone=""
+inventoryzone=""
 
 [input]
 
