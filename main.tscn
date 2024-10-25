@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://duetvswiaara2" path="res://dragndrop.tscn" id="1_lq0wf"]
 [ext_resource type="PackedScene" uid="uid://bw02b3oq4iglp" path="res://test_zones.tscn" id="2_2owxu"]
-[ext_resource type="PackedScene" path="res://map.tscn" id="3_750iw"]
+[ext_resource type="PackedScene" uid="uid://cdyr0yhunxb6m" path="res://map.tscn" id="3_750iw"]
 
 [node name="main" type="Node2D"]
 

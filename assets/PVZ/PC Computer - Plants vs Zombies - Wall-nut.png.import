@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drkmkif6mdk7l"
-path="res://.godot/imported/PC Computer - Plants vs Zombies - Day.png-be342feeabd3ab15ae2a9f29bd960167.ctex"
+uid="uid://ho416dcs30tg"
+path="res://.godot/imported/PC Computer - Plants vs Zombies - Wall-nut.png-72d58e00ba81ec5b01055ce1b214ab2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PC Computer - Plants vs Zombies - Day.png"
-dest_files=["res://.godot/imported/PC Computer - Plants vs Zombies - Day.png-be342feeabd3ab15ae2a9f29bd960167.ctex"]
+source_file="res://assets/PVZ/PC Computer - Plants vs Zombies - Wall-nut.png"
+dest_files=["res://.godot/imported/PC Computer - Plants vs Zombies - Wall-nut.png-72d58e00ba81ec5b01055ce1b214ab2c.ctex"]
 
 [params]
 

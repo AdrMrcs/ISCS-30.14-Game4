@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6iqcgwdo14ay"
-path="res://.godot/imported/PC Computer - Plants vs Zombies - Regular Zombies.png-c1bb516e362dcfa541bf2fb43aa64d18.ctex"
+uid="uid://ctvhpk4ppi501"
+path="res://.godot/imported/PC Computer - Plants vs Zombies - Sunflower.png-fa82cee700447c81b7b91622df5856ab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/PC Computer - Plants vs Zombies - Regular Zombies.png"
-dest_files=["res://.godot/imported/PC Computer - Plants vs Zombies - Regular Zombies.png-c1bb516e362dcfa541bf2fb43aa64d18.ctex"]
+source_file="res://assets/PVZ/PC Computer - Plants vs Zombies - Sunflower.png"
+dest_files=["res://.godot/imported/PC Computer - Plants vs Zombies - Sunflower.png-fa82cee700447c81b7b91622df5856ab.ctex"]
 
 [params]
 

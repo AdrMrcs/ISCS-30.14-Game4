@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtkwh2t0y284"]
+
+[ext_resource type="PackedScene" uid="uid://b7ixh4mlxbc74" path="res://new_map.tscn" id="1_onlq6"]
+[ext_resource type="PackedScene" uid="uid://duetvswiaara2" path="res://dragndrop.tscn" id="2_geim1"]
+[ext_resource type="PackedScene" uid="uid://bgo2egpck4o4a" path="res://new_zones.tscn" id="3_7ypu4"]
+
+[node name="NEW MAIN" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_onlq6")]
+
+[node name="DragnDrop" parent="." instance=ExtResource("2_geim1")]
+
+[node name="Drop Zones" parent="." instance=ExtResource("3_7ypu4")]

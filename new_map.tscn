@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7ixh4mlxbc74"]
+
+[ext_resource type="Texture2D" uid="uid://dg8bpng2qi5al" path="res://assets/BtB/ACEHARDWARE-oJFudluOC-transformed.jpeg" id="1_6rtc1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Acehardware-oJFudluOc-transformed" type="Sprite2D" parent="."]
+position = Vector2(623, 414)
+texture = ExtResource("1_6rtc1")

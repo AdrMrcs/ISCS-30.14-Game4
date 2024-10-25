@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cdyr0yhunxb6m"]
 
-[ext_resource type="Texture2D" uid="uid://drkmkif6mdk7l" path="res://assets/PC Computer - Plants vs Zombies - Day.png" id="1_e4exm"]
+[ext_resource type="Texture2D" path="res://assets/PC Computer - Plants vs Zombies - Day.png" id="1_e4exm"]
 
 [node name="Map" type="Node2D"]
 
