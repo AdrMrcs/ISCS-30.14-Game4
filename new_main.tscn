@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtkwh2t0y284"]
+[gd_scene load_steps=9 format=3 uid="uid://dtkwh2t0y284"]
 
 [ext_resource type="PackedScene" uid="uid://b7ixh4mlxbc74" path="res://new_map.tscn" id="1_onlq6"]
 [ext_resource type="PackedScene" uid="uid://dp4tt4dbmkimd" path="res://enemy_zones.tscn" id="2_rjyjm"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://cwmr7g4l4v2cv" path="res://inventory_zones.tscn" id="4_jmtu6"]
 [ext_resource type="PackedScene" uid="uid://1ibqpimeb7s1" path="res://inventory_handler.tscn" id="6_jfe42"]
 [ext_resource type="PackedScene" uid="uid://c0ittjrepjlrl" path="res://enemy_handler.tscn" id="7_w7i05"]
+[ext_resource type="PackedScene" uid="uid://dor5hf2dyhcls" path="res://stat_component.tscn" id="8_ls3u3"]
 
 [node name="NEW MAIN" type="Node2D"]
 
@@ -23,3 +24,5 @@
 [node name="EnemyHandler" parent="." instance=ExtResource("7_w7i05")]
 
 [node name="InventoryHandler" parent="." instance=ExtResource("6_jfe42")]
+
+[node name="HealthComponent" parent="." instance=ExtResource("8_ls3u3")]
