@@ -1,23 +1,24 @@
 extends Node2D
 
-@onready var icon: Sprite2D = $Icon
+@onready var inv_handler = get_tree().get_first_node_in_group('inventory_handler')
 
 var selected = false
 var rest_point
-var init_point
+var current_zone
+var start_zone
 var inventoryzones = []
 var playerzones = []
 
 func _ready():
 	inventoryzones = get_tree().get_nodes_in_group("inventoryzone")
 	playerzones = get_tree().get_nodes_in_group("zone")
-	for zone in inventoryzones:
-		if not zone.selected:
-			rest_point = zone.global_position
-			init_point = rest_point
-			$IdleIcon.global_position = rest_point
-			zone._select()
-			break
+
+			
+func add(zone: Node2D, type: int):
+	rest_point = zone.global_position
+	start_zone = zone
+	current_zone = zone
+	zone._select()
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if Input.is_action_just_pressed("click"):
@@ -25,9 +26,9 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 		
 func _physics_process(delta):
 	if selected:
-		icon.global_position = lerp(icon.global_position, get_global_mouse_position(), 25 * delta)
+		global_position = lerp(global_position, get_global_mouse_position(), 25 * delta)
 	else:
-		icon.global_position = lerp(icon.global_position, rest_point, 10 * delta	)
+		global_position = lerp(global_position, rest_point, 10 * delta	)
 
 func _input(event):
 	if event is InputEventMouseButton:
@@ -35,11 +36,11 @@ func _input(event):
 			selected = false
 			var shortest_dist = 75
 			for zone in playerzones:
-				var distance = icon.global_position.distance_to(zone.global_position)
+				var distance = global_position.distance_to(zone.global_position)
 				if distance < shortest_dist and not zone.selected:
 					zone._select()
+					current_zone.deselect()
 					rest_point = zone.global_position
 					shortest_dist = distance
-					
-func _return():
-	icon.global_position = lerp(icon.global_position, init_point, 40)
+					current_zone = zone
+					inv_handler.refresh(start_zone)
