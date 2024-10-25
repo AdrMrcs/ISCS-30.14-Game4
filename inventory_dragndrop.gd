@@ -8,12 +8,12 @@ var current_zone
 var start_zone
 var inventoryzones = []
 var playerzones = []
+var inv_size = 4
 
 func _ready():
 	inventoryzones = get_tree().get_nodes_in_group("inventoryzone")
 	playerzones = get_tree().get_nodes_in_group("zone")
 
-			
 func add(zone: Node2D, type: int):
 	rest_point = zone.global_position
 	start_zone = zone

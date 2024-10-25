@@ -26,6 +26,7 @@ zone=""
 enemyzone=""
 inventoryzone=""
 inventory_handler=""
+inventory_zones=""
 
 [input]
 
