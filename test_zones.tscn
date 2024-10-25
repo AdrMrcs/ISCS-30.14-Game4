@@ -4,11 +4,137 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="dropzone10" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(940, 132)
+
 [node name="dropzone" parent="." instance=ExtResource("1_tnk6g")]
-position = Vector2(199, 112)
+position = Vector2(297, 132)
 
 [node name="dropzone2" parent="." instance=ExtResource("1_tnk6g")]
-position = Vector2(674, 229)
+position = Vector2(298, 230)
 
 [node name="dropzone3" parent="." instance=ExtResource("1_tnk6g")]
-position = Vector2(365, 373)
+position = Vector2(297, 335)
+
+[node name="dropzone4" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(296, 430)
+
+[node name="dropzone5" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(295, 525)
+
+[node name="dropzone6" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(375, 132)
+
+[node name="dropzone7" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(860, 525)
+
+[node name="dropzone8" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(860, 430)
+
+[node name="dropzone9" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(860, 335)
+
+[node name="dropzone11" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(860, 230)
+
+[node name="dropzone12" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(860, 132)
+
+[node name="dropzone13" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(780, 525)
+
+[node name="dropzone14" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(780, 430)
+
+[node name="dropzone15" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(780, 335)
+
+[node name="dropzone16" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(777, 230)
+
+[node name="dropzone17" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(780, 132)
+
+[node name="dropzone18" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(700, 525)
+
+[node name="dropzone19" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(700, 430)
+
+[node name="dropzone20" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(700, 335)
+
+[node name="dropzone21" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(700, 230)
+
+[node name="dropzone22" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(700, 132)
+
+[node name="dropzone23" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(620, 525)
+
+[node name="dropzone24" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(620, 430)
+
+[node name="dropzone25" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(620, 335)
+
+[node name="dropzone26" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(620, 230)
+
+[node name="dropzone27" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(620, 132)
+
+[node name="dropzone28" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(538, 525)
+
+[node name="dropzone29" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(538, 430)
+
+[node name="dropzone30" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(538, 335)
+
+[node name="dropzone31" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(538, 230)
+
+[node name="dropzone32" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(538, 132)
+
+[node name="dropzone33" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(455, 525)
+
+[node name="dropzone34" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(455, 430)
+
+[node name="dropzone35" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(455, 335)
+
+[node name="dropzone36" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(455, 230)
+
+[node name="dropzone37" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(455, 132)
+
+[node name="dropzone38" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(375, 525)
+
+[node name="dropzone39" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(375, 430)
+
+[node name="dropzone40" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(375, 335)
+
+[node name="dropzone41" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(375, 230)
+
+[node name="dropzone42" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(940, 525)
+
+[node name="dropzone43" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(940, 430)
+
+[node name="dropzone44" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(940, 335)
+
+[node name="dropzone45" parent="." instance=ExtResource("1_tnk6g")]
+position = Vector2(940, 230)

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cdyr0yhunxb6m"]
+
+[ext_resource type="Texture2D" uid="uid://drkmkif6mdk7l" path="res://assets/PC Computer - Plants vs Zombies - Day.png" id="1_e4exm"]
+
+[node name="Map" type="Node2D"]
+
+[node name="PcComputer-PlantsVsZombies-Day" type="Sprite2D" parent="."]
+position = Vector2(700, 300)
+texture = ExtResource("1_e4exm")
