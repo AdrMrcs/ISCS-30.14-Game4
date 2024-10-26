@@ -1,16 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://duetvswiaara2"]
+[gd_scene load_steps=4 format=3 uid="uid://cq2umx01p18ij"]
 
-[ext_resource type="Script" path="res://dragndrop.gd" id="1_3f6xi"]
-[ext_resource type="Texture2D" uid="uid://bimibnd0tp4ja" path="res://icon.svg" id="2_j3ktj"]
+[ext_resource type="Script" path="res://Scripts/inventory_dragndrop.gd" id="1_0234b"]
+[ext_resource type="Texture2D" uid="uid://bimibnd0tp4ja" path="res://Scripts/icon.svg" id="2_n5yw0"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w12k5"]
 radius = 50.0
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_3f6xi")
+script = ExtResource("1_0234b")
 
 [node name="Icon" type="Sprite2D" parent="."]
-texture = ExtResource("2_j3ktj")
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_n5yw0")
 
 [node name="Area2D" type="Area2D" parent="Icon"]
 

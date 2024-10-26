@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dp4tt4dbmkimd"]
 
-[ext_resource type="PackedScene" uid="uid://oktbikbvomqv" path="res://enemyzone.tscn" id="1_fxg4a"]
+[ext_resource type="PackedScene" uid="uid://oktbikbvomqv" path="res://Scenes/enemyzone.tscn" id="1_fxg4a"]
 
 [node name="Node2D" type="Node2D"]
 

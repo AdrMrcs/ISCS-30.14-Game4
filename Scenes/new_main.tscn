@@ -1,0 +1,28 @@
+[gd_scene load_steps=9 format=3 uid="uid://dtkwh2t0y284"]
+
+[ext_resource type="PackedScene" uid="uid://b7ixh4mlxbc74" path="res://Scenes/new_map.tscn" id="1_onlq6"]
+[ext_resource type="PackedScene" uid="uid://dp4tt4dbmkimd" path="res://Scenes/enemy_zones.tscn" id="2_rjyjm"]
+[ext_resource type="PackedScene" uid="uid://bgo2egpck4o4a" path="res://Scenes/player_zones.tscn" id="3_7ypu4"]
+[ext_resource type="PackedScene" uid="uid://m8c25p28by66" path="res://Scenes/player_handler.tscn" id="4_gj6lx"]
+[ext_resource type="PackedScene" uid="uid://cwmr7g4l4v2cv" path="res://Scenes/inventory_zones.tscn" id="4_jmtu6"]
+[ext_resource type="PackedScene" uid="uid://1ibqpimeb7s1" path="res://Scenes/inventory_handler.tscn" id="6_jfe42"]
+[ext_resource type="PackedScene" uid="uid://c0ittjrepjlrl" path="res://Scenes/enemy_handler.tscn" id="7_w7i05"]
+[ext_resource type="PackedScene" uid="uid://dor5hf2dyhcls" path="res://Scenes/stat_component.tscn" id="8_ls3u3"]
+
+[node name="NEW MAIN" type="Node2D"]
+
+[node name="Map" parent="." instance=ExtResource("1_onlq6")]
+
+[node name="Enemy Zones" parent="." instance=ExtResource("2_rjyjm")]
+
+[node name="Drop Zones" parent="." instance=ExtResource("3_7ypu4")]
+
+[node name="Inventory Zones" parent="." instance=ExtResource("4_jmtu6")]
+
+[node name="PlayerHandler" parent="." instance=ExtResource("4_gj6lx")]
+
+[node name="EnemyHandler" parent="." instance=ExtResource("7_w7i05")]
+
+[node name="InventoryHandler" parent="." instance=ExtResource("6_jfe42")]
+
+[node name="HealthComponent" parent="." instance=ExtResource("8_ls3u3")]

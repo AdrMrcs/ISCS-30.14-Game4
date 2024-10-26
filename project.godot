@@ -11,14 +11,18 @@ config_version=5
 [application]
 
 config/name="JRPG"
-run/main_scene="res://new_main.tscn"
+run/main_scene="res://Scenes/new_main.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://Scripts/icon.svg"
 
 [display]
 
 window/size/viewport_width=1250
 window/size/viewport_height=850
+
+[dotnet]
+
+project/assembly_name="JRPG"
 
 [global_group]
 
