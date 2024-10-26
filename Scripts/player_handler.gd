@@ -13,6 +13,7 @@ func _ready() -> void:
 	characters = [domino.instantiate(), lorele.instantiate(), edward.instantiate()]
 	assert(len(player_zones) == len(characters))
 	
+	# Load the 3 characters
 	for i in range(len(player_zones)):
 		var zone = player_zones[i]
 		var character = characters[i]

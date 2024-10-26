@@ -8,17 +8,13 @@
 atlas = ExtResource("1_t6sb0")
 region = Rect2(0, 128, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_434a2"]
-atlas = ExtResource("1_t6sb0")
-region = Rect2(64, 128, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qu5nd"]
-atlas = ExtResource("1_t6sb0")
-region = Rect2(128, 128, 64, 64)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_2g7gw"]
 atlas = ExtResource("1_t6sb0")
 region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_434a2"]
+atlas = ExtResource("1_t6sb0")
+region = Rect2(64, 128, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aag5f"]
 atlas = ExtResource("1_t6sb0")
@@ -32,6 +28,10 @@ region = Rect2(64, 0, 64, 64)
 atlas = ExtResource("1_t6sb0")
 region = Rect2(128, 0, 64, 64)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_qu5nd"]
+atlas = ExtResource("1_t6sb0")
+region = Rect2(128, 128, 64, 64)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_4fk1b"]
 animations = [{
 "frames": [{
@@ -44,26 +44,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_2g7gw")
+}],
+"loop": true,
+"name": &"Cast",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_434a2")
 }],
 "loop": true,
 "name": &"Guard",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qu5nd")
-}],
-"loop": true,
-"name": &"Take_damage",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2g7gw")
-}],
-"loop": true,
-"name": &"cast",
 "speed": 5.0
 }, {
 "frames": [{
@@ -77,7 +69,15 @@ animations = [{
 "texture": SubResource("AtlasTexture_xxg15")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qu5nd")
+}],
+"loop": true,
+"name": &"Take_damage",
 "speed": 5.0
 }]
 
@@ -86,8 +86,8 @@ animations = [{
 [node name="edward" type="AnimatedSprite2D" parent="."]
 scale = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_4fk1b")
-animation = &"Attack"
-frame_progress = 0.547254
+animation = &"Cast"
+frame_progress = 0.220197
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_uyqwp")]
 

@@ -16,10 +16,6 @@ region = Rect2(0, 128, 64, 64)
 atlas = ExtResource("1_4rsok")
 region = Rect2(64, 128, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_bliym"]
-atlas = ExtResource("1_4rsok")
-region = Rect2(128, 128, 64, 64)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_vkgyk"]
 atlas = ExtResource("1_4rsok")
 region = Rect2(0, 0, 64, 64)
@@ -31,6 +27,10 @@ region = Rect2(64, 0, 64, 64)
 [sub_resource type="AtlasTexture" id="AtlasTexture_ta1cu"]
 atlas = ExtResource("1_4rsok")
 region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bliym"]
+atlas = ExtResource("1_4rsok")
+region = Rect2(128, 128, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4fk1b"]
 animations = [{
@@ -54,14 +54,6 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bliym")
-}],
-"loop": false,
-"name": &"Take_damage",
-"speed": 5.0
-}, {
-"frames": [{
 "duration": 5.0,
 "texture": SubResource("AtlasTexture_vkgyk")
 }, {
@@ -72,7 +64,15 @@ animations = [{
 "texture": SubResource("AtlasTexture_ta1cu")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bliym")
+}],
+"loop": false,
+"name": &"Take_damage",
 "speed": 5.0
 }]
 
@@ -81,7 +81,7 @@ animations = [{
 [node name="domino" type="AnimatedSprite2D" parent="."]
 scale = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_4fk1b")
-animation = &"idle"
+animation = &"Idle"
 speed_scale = 0.5
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_q5u8m")]
