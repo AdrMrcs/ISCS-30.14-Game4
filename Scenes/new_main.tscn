@@ -15,7 +15,7 @@
 
 [node name="Enemy Zones" parent="." instance=ExtResource("2_rjyjm")]
 
-[node name="Drop Zones" parent="." instance=ExtResource("3_7ypu4")]
+[node name="Player Zones" parent="." instance=ExtResource("3_7ypu4")]
 
 [node name="Inventory Zones" parent="." instance=ExtResource("4_jmtu6")]
 
@@ -25,4 +25,4 @@
 
 [node name="InventoryHandler" parent="." instance=ExtResource("6_jfe42")]
 
-[node name="HealthComponent" parent="." instance=ExtResource("8_ls3u3")]
+[node name="StatComponent" parent="." instance=ExtResource("8_ls3u3")]

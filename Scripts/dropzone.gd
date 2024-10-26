@@ -9,6 +9,6 @@ func _select():
 	modulate = Color.WEB_MAROON
 	selected = true
 		
-func deselect():
+func _deselect():
 	modulate = Color.WHITE
 	selected = false

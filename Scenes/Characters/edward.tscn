@@ -84,8 +84,10 @@ animations = [{
 [node name="Player" type="Node2D"]
 
 [node name="edward" type="AnimatedSprite2D" parent="."]
+scale = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_4fk1b")
-animation = &"Take_damage"
+animation = &"Attack"
+frame_progress = 0.186209
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_uyqwp")]
 

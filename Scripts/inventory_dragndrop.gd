@@ -39,7 +39,7 @@ func _input(event):
 				var distance = global_position.distance_to(zone.global_position)
 				if distance < shortest_dist and not zone.selected:
 					zone._select()
-					current_zone.deselect()
+					current_zone._deselect()
 					rest_point = zone.global_position
 					shortest_dist = distance
 					current_zone = zone

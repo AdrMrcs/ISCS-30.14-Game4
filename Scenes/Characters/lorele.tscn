@@ -41,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0wok1")
 }],
-"loop": true,
+"loop": false,
 "name": &"Attack",
 "speed": 5.0
 }, {
@@ -49,7 +49,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ccqlb")
 }],
-"loop": true,
+"loop": false,
 "name": &"Guard",
 "speed": 5.0
 }, {
@@ -57,7 +57,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_65syc")
 }],
-"loop": true,
+"loop": false,
 "name": &"Take_damage",
 "speed": 5.0
 }, {
@@ -73,15 +73,15 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 5.0
+"speed": 15.0
 }]
 
 [node name="Player" type="Node2D"]
 
 [node name="lorele" type="AnimatedSprite2D" parent="."]
+scale = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_4fk1b")
-animation = &"Attack"
-frame_progress = 0.417375
+animation = &"idle"
 speed_scale = 0.5
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_mlt3l")]
