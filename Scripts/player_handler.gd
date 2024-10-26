@@ -5,16 +5,19 @@ extends Node2D
 @onready var edward: PackedScene = load("res://Scenes/Characters/edward.tscn")
 
 var player_zones
-var characters = [domino, lorele, edward] # CHARACTER SCENES
+var characters
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	player_zones = get_tree().get_nodes_in_group('zone')
-	for zone in player_zones:
-		if not zone.selected:
-			var new_player = lorele.instantiate()
-			new_player.global_position = zone.global_position
-			add_child(new_player)
+	characters = [domino.instantiate(), lorele.instantiate(), edward.instantiate()]
+	assert(len(player_zones) == len(characters))
+	
+	for i in range(len(player_zones)):
+		var zone = player_zones[i]
+		var character = characters[i]
+		character.global_position = zone.global_position
+		add_child(character)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

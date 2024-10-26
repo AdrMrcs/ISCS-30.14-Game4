@@ -87,7 +87,7 @@ animations = [{
 scale = Vector2(-2, 2)
 sprite_frames = SubResource("SpriteFrames_4fk1b")
 animation = &"Attack"
-frame_progress = 0.186209
+frame_progress = 0.547254
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_uyqwp")]
 

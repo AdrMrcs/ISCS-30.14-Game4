@@ -25,4 +25,4 @@ func set_stats():
 	attack = stats[type][1]
 	defense = stats[type][2]
 	speed = stats[type][3]
-	print (hp, attack, defense, speed)
+	#print (hp, attack, defense, speed)
