@@ -1,13 +1,88 @@
-[gd_scene load_steps=4 format=3 uid="uid://tchdbau4vndm"]
+[gd_scene load_steps=12 format=3 uid="uid://tchdbau4vndm"]
 
-[ext_resource type="Texture2D" uid="uid://bimibnd0tp4ja" path="res://Scripts/icon.svg" id="1_ai4ls"]
+[ext_resource type="Texture2D" uid="uid://covuw24esa65" path="res://assets/BtB/PlayStation_-_Beyond_the_Beyond_-_Domino-removebg-preview.png" id="1_bndmi"]
 [ext_resource type="PackedScene" uid="uid://dmwyboohpakgo" path="res://Scenes/health_component.tscn" id="2_gsp01"]
 [ext_resource type="PackedScene" uid="uid://brd8bynp1xu00" path="res://Scenes/attack_component.tscn" id="3_6iyar"]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8ueu"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_upm82"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njxtm"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(64, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bliym"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(128, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkgyk"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wv0jv"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta1cu"]
+atlas = ExtResource("1_bndmi")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4fk1b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8ueu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_upm82")
+}],
+"loop": true,
+"name": &"Attack",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njxtm")
+}],
+"loop": true,
+"name": &"Guard",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bliym")
+}],
+"loop": true,
+"name": &"Take_damage",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 5.0,
+"texture": SubResource("AtlasTexture_vkgyk")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_wv0jv")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ta1cu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
 [node name="Player" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_ai4ls")
+[node name="domino" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4fk1b")
+animation = &"idle"
+frame_progress = 0.461852
+speed_scale = 0.5
 
 [node name="HealthComponent" parent="." instance=ExtResource("2_gsp01")]
 

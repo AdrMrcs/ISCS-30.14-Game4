@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var player1: PackedScene = load("res://player1.tscn")
+@onready var player1: PackedScene = load("res://Scenes/player1.tscn")
 
 var player_zones
 

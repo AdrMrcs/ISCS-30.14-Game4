@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var enemy1: PackedScene = load("res://enemy1.tscn")
+@onready var enemy1: PackedScene = load("res://Scenes/enemy1.tscn")
 
 var enemy_zones
 

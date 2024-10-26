@@ -1,8 +1,8 @@
 extends Node2D
 
-@onready var inventory: PackedScene = load("res://inventory_dragndrop.tscn")
+@onready var inventory: PackedScene = load("res://Scenes/inventory_dragndrop.tscn")
 @onready var inv_zones = get_tree().get_first_node_in_group('inventory_zones')
-@onready var zone: PackedScene = load("res://inventoryzone.tscn")
+@onready var zone: PackedScene = load("res://Scenes/inventoryzone.tscn")
 
 var inventory_zones = []
 var inv_size = 5
